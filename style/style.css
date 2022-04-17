@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,22 +12,26 @@ section {
     width: 100%;
     height: 100vh;
 }
-ol { 
-   padding: 5px 20px 0 45px;
+
+ol {
+    padding: 5px 20px 0 45px;
 
 }
+
 header {
     height: 20%;
     width: 100%;
-    background: lightyellow;
+    background: white;
     font-size: 35px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-header > img {
+
+header>img {
     height: 85%;
 }
+
 .wrapper {
     height: 80%;
     width: 100%;
@@ -36,16 +40,21 @@ header > img {
     justify-content: space-evenly;
     align-items: flex-start;
 }
+
 .plan-wrapper {
+    position: relative;
     height: 70%;
-    width: 25%; 
+    width: 25%;
     margin-top: 50px;
 }
-.plan-wrapper > h3{
+
+.plan-wrapper>h3 {
     font-size: 40px;
     text-align: center;
+    font-weight: 400;
     margin-bottom: 15px;
 }
+
 .lesson-plan {
     height: 100%;
     width: 100%;
@@ -54,23 +63,50 @@ header > img {
     transition: 0.5s;
     overflow-y: auto;
 }
-.lesson-plan:hover {
+
+.lesson-plan:nth-child(4n-2):hover {
     transform: scale(1.01);
     box-shadow: 0 0 50px 10px rgba(61, 57, 57, 0.5);
 }
 
+.tba {
+    width: 100%;
+    height: 100px;
+    background: hsl(49, 100%, 50%);
+    z-index: 10;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px black dashed;
+    border-bottom: 10px black dashed;
+
+}
+
+.js-plan {
+    overflow-y: hidden;
+}
+
+
+.js-plan ol {
+    filter: blur(5px);
+}
+
 .lesson-plan li {
     font-weight: 300;
-    text-align: justify;
     font-size: 20px;
     word-wrap: break-word;
     padding-bottom: 10px;
     padding-top: 10px;
     border-bottom: 1px solid black;
 }
-.lesson-plan li:nth-last-child() {
 
+.lesson-plan li:last-child {
+    border: none;
 }
+
 .lesson-plan a {
     font-weight: 700;
 }
