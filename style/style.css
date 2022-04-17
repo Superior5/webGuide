@@ -39,12 +39,15 @@ header>img {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
 }
 
 .plan-wrapper {
     position: relative;
     height: 70%;
     width: 25%;
+    min-width: 342px;
     margin-top: 50px;
 }
 
@@ -115,4 +118,25 @@ header>img {
 
 .lesson-plan a {
     font-weight: 700;
+}
+
+@media (max-width: 390px) {
+
+    .wrapper {
+        height: auto;
+    }
+    .plan-wrapper {
+        height: 500px;
+        width: 25%;
+        margin-bottom: 30px;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    header img{
+        height: 60% ;
+    }
+    .plan-wrapper:nth-child(3) {
+        padding-bottom: 30px;
+    }
 }
