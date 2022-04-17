@@ -120,7 +120,7 @@ header>img {
     font-weight: 700;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 768px) {
 
     .wrapper {
         height: auto;
@@ -128,6 +128,7 @@ header>img {
     .plan-wrapper {
         height: 500px;
         width: 25%;
+        min-width: 430px;
         margin-bottom: 30px;
     }
     header h1 {
